@@ -29,7 +29,6 @@ def copy_files_manual(to_path='', from_path='', devicename=None):
     # command for pulling a file
     cmd = cmd + 'pull '
     new_cmd = cmd + from_path + ' ' + to_path
-    print new_cmd
     (status, output) = commands.getstatusoutput(new_cmd)
     if status:
         print 'Could not copy', from_path, sys.stderr
@@ -48,7 +47,6 @@ def del_files(devicename, path):
     cmd = add_adb_device(devicename)
     # command for deleting the file
     cmd = cmd + 'shell rm -r ' + path
-    print cmd
     (status, output) = commands.getstatusoutput(cmd)
     if status:
         print 'Could not delete', path, sys.stderr
