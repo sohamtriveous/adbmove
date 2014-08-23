@@ -1,7 +1,15 @@
 adbmove
 =======
 
-A simple python utility to move and copy directories from your android device to your laptop
+A simple python utility to do the following
+- move files/directories from your android device to your laptop
+- copy files/directories from your android device to your laptop
+- perform the above from any particular device with the --device parm
+
+###Prerequisites
+- python installation :)
+- access to adb on the system path
+- the directories to be moved/copied should be accessible via adb
 
 ###Usage
 
